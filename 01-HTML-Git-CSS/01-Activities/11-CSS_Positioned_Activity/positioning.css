@@ -1,0 +1,16 @@
+
+
+
+body {
+
+}
+
+#top-fixed-box{
+
+    width: 200px;
+    position: fixed;
+    height: 100px;
+    background-color: gray;
+
+}
+
