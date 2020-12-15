@@ -1,0 +1,30 @@
+
+
+
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+
+  .styledFont {
+      color: brown;
+    font-weight: bold;
+    font-style: italic;
+
+  }
+
+
+  img 
+{
+
+
+      border: 5px solid;
+      border-radius: 10px;
+      padding: 5px;
+
+      color: black;
+  }
