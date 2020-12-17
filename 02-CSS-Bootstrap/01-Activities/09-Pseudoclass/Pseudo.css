@@ -1,0 +1,13 @@
+
+
+a:hover {background-color: red; font-size: 35px;}
+
+
+
+a:default {background-color: blue;font-size: 45px;}
+
+a:focus {background-color:pink; font-size: 45px;}
+
+a:active {background-color:black;}
+
+a {line-height: 25px;font-size: 45px; }

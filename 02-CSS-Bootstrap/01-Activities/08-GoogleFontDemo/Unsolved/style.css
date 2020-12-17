@@ -3,3 +3,18 @@
  **/
 
 /* Add in the Google Fonts of your choice */
+
+
+h1 {font-family: 'Press Start 2P', cursive; background-color: white;}
+
+
+
+.thought1{font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;}
+
+.thought2 {font-family: 'Carter One', cursive; line-height: 25px;}
+
+.thought3{font-family: 'Monoton', cursive;}
+
+body{background-color: red;}
+
+h3 {font-family: 'Sigmar One', cursive; font-size: 25px;}
