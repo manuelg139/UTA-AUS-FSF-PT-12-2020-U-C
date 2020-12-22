@@ -69,3 +69,10 @@ body {
     width: 600px;
   }
 }
+
+
+@media screen and (max-width: 320){
+  body {
+    background-color: green;
+  }
+}
