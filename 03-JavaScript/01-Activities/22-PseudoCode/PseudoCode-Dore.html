@@ -1,0 +1,51 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Numbers</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+   
+var computerChoices = [“r”, “p”, “s”]
+        var wins = 0;
+        var losses = 0;
+        var ties = 0;
+        var userGuess = prompt(“Enter r, p or s to play!“)
+        userGuess = userGuess.toLowerCase()
+
+
+        for (var i = 0; i < computerChoices.length; i++) {
+       // console.log(computerChoices[i]);
+        
+        
+        
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
+        console.log(computerGuess)
+        console.log(Math.floor(Math.random() * computerChoices.length))
+        if (userGuess === “r” || userGuess === “p” || userGuess === “s”) {
+            alert(“The computer chose ” + computerGuess);
+        }
+
+
+
+        //win/tie/lose conditions
+        if {(userGuess === “r” && computerGuess === “s”) || (userGuess === “s” && computerGuess === “p”) ||
+            (userGuess === “p” && computerGuess === “r”)}{
+            wins++; 
+            alert("You've won “ + wins + "times")
+        }
+        else if (userGuess === computerGuess) {
+            alert(“You’ve tied “)
+        }
+        else {
+            alert(“You’ve lost “)
+        }
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Numbers</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+   
+   
+  // declare rock paper scissors-
+
+  // prompt uer for imput - pick rock paper or scissors
+
+   // check if user input is R  P S
+
+   // If users input is not R P S send an alert telling them bad imput
+   
+   // cpmpyter picks R P S
+
+   //Iif user plays rock over cmputer playing S, user wins, alert them that they win
+
+   //if user looses alert them they lost 
+
+
+var RockPaperScissors  = ["r", "p", "s"];
+
+var wins = 0;
+var losses = 0;
+var toes = 0;
+
+
+var guessPick = prompt("Enter, p, s to play!") 
+guessPick = guessPick.toLowerCase()
+
+//for (var i = 0; i <RockPaperScissors.length; i++){
+ //   console.log(RockPaperScissors[1])}
+
+
+var computerPick = RockPaperScissors[Math.floor(Math.random() * RockPaperScissors.length)]
+console.log(computerPick) 
+console.log(Math.floor(Math.random() * RockPaperScissors.length))
+
+
+if (guessPick==="r"|| guessPick==="p"|| guessPick==="s") {
+    alert("the Computer Chose " + RockPaperScissors);
+}
+
+// win/tie/loose conditions
+
+if ((guessPick === "r" && guessPick === "s") || (guessPick === "s" && computerPick) === "p") || (guessPick === "p" && computerPick === "r")
+) {alert("You Have Won!!!")
+}
+
+else if (guessPick === computerPick)
+    alert("You Have Tied >.< ")
+
+
+    else () (alert(“You’ve lost “)
+        }
+
+
+
+
+
+    </script>
+  </body>
+</html>
