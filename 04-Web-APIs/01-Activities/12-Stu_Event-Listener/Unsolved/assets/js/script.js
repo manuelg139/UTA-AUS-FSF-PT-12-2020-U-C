@@ -8,5 +8,20 @@ function setCounterText() {
 }
 
 // TODO: Add event listener to increment button
+incrementEl.addEventListener("click", function(){
+  count +=1; setCounterText();
+}
+);
 
 // TODO: Add event listener to decrement button 
+incrementEl.addEventListener("click", function(){
+
+  if (count > 0) {
+    count -=1;
+    setCounterText();
+
+  }
+  
+
+}
+);
