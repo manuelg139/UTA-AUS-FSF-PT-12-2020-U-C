@@ -18,19 +18,19 @@
         driveToWork: function() {
 
           alert("Old Mileage: " + this.mileage);
-
+// using this in a fucnion within an object refers to the info declared prior
           this.mileage = this.mileage + 8;
 
-          alert("New mileage: " + this.mileage);
+          alert("New mileage after driving to work: " + this.mileage);
         },
 
         driveAroundWorld: function() {
 
           alert("Old Mileage: " + this.mileage);
-
+          //the this.milage keeps adding as the object goes
           this.mileage = this.mileage + 24000;
 
-          alert("New Mileage: " + this.mileage);
+          alert("New Mileage after driving around the world: " + this.mileage);
           alert("Car needs a tuneup!");
 
           this.isWorking = false;
@@ -48,22 +48,23 @@
 
 
       // How would we log...
-
       // The car's make?
-
       console.log(car.make);
-
-
+      console.log(car["make"]);
       // The car's model?
       console.log(car.model);
       // The car's mileage?
       console.log(car.mileage);
+
+
       // How would we run the car's driveToWork method?
       car.driveToWork()
+        // because the funciton is inside the object youhave to call car before
       // How would we run the car's driveAroundWorld method?
-
+      car.driveAroundWorld()
       // How would we run the getTuneUp method?
-
+     car.getTuneUp()
+     car.honk()
     </script>
     
   </body>

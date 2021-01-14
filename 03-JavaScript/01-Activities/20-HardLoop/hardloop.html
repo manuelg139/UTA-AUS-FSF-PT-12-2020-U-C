@@ -24,19 +24,34 @@ var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
 
 -->
 
+
     <script type="text/javascript">
 
+
+
 var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+var arrayLenght = myFarm.length
 
-for(var i = 0; i < myFarm.length; i++){
-    console.log(myFarm[i]); 
- 
-    if(myFarm[i].charAt(0) === "c" || myFarm[i].charAt(0) === "o"){
-        alert("Starts with a 'c' or an 'o'");
+for (var i = 0; i < arrayLenght; i++) {
+  console.log(myFarm[i]);
 
-    }
+  // we need an If Statement to add the condition
+  // myFarm[i] will reference the loop
+  // charAt is a method syntax (0) is the index for the first letter
+  // console.log(myFarm[i].charAt(0)); to see first letters
+
+// if myloop.firstletter === c or o
+    //alert me saying ""Starts with a c or am o"" 
+
+   if (myFarm[i].charAt(0) === "c" || myFarm[i].charAt(0) === "o") {
+    alert("Starts with a c or am o");
+  }
 
 }
+
+
+ 
+
 
 
 

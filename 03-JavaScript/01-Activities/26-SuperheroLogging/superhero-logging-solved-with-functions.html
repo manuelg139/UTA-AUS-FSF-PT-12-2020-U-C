@@ -20,12 +20,45 @@
       var thingsInFrontOfMe = ["Laptop", "Beanbag", "Cats", "Slippers"];
       var howIFeel = ["Sleep Deprived", "Wired on Coffee", "Excited"];
 
-      // FUNCTIONS
-      // ========================================================================================
 
-      // Here we create a "Function" that allows us to "call" (run) the loop for any array we wish.
+//You can og all the arrays individually like this but...
+      // For Loop for Brands
+      for (var i = 0; i < brands.length; i++) {
+        console.log(brands[i]);
+      }
+      console.log("---------");
+
+      // For Loop for Heroes
+      for (var j = 0; j < heroes.length; j++) {
+        console.log(heroes[j]);
+      }
+      console.log("---------");
+
+      // For Loop for booksOnMyShelf
+      for (var k = 0; k < booksOnMyShelf.length; k++) {
+        console.log(booksOnMyShelf[k]);
+      }
+      console.log("---------");
+
+      // For Loop for thingsInFrontOfMe
+      for (var l = 0; l < thingsInFrontOfMe.length; l++) {
+        console.log(thingsInFrontOfMe[l]);
+      }
+      console.log("---------");
+
+      // For Loop for howIFeel
+      for (var m = 0; m < howIFeel.length; m++) {
+        console.log(howIFeel[m]);
+      }
+      console.log("---------");
+
+  
+      // Using a "Function" we can use the same code once  and "call" (run) the loop 
+      //for any array we wish.
       // We pass in an array as an "argument".
-      function consoleInside(arr) {
+
+
+      function myFirstFunction(arr) {
 
         // We then loop through the selected array.
         for (var i = 0; i < arr.length; i++) {
@@ -36,17 +69,18 @@
         console.log("---------");
       }
 
+      myFirstFunction(brands);
+      myFirstFunction(heroes);
+      myFirstFunction(booksOnMyShelf);
+      myFirstFunction(thingsInFrontOfMe);
+      myFirstFunction(howIFeel);
+
 
       // FUNCTION CALLS (Execution)
       // =======================================================================================
 
       // Here we call the function to run our for-loop code on each of the following arrays.
-      consoleInside(brands);
-      consoleInside(heroes);
-      consoleInside(booksOnMyShelf);
-      consoleInside(thingsInFrontOfMe);
-      consoleInside(howIFeel);
-
+   
     </script>
 
   </body>
