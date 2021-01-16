@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lottery Generator</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  * Using the code from the previous random number generator as a starting point, create a lottery generator.
+
+  * In our case, the lottery number generator should pick 9 random numbers between 0-9 and output as one number. As an example: 886563264.
+
+  * Display this number in the random-number div.
+
+  * Then when a user clicks again, have the code create a new row with the latest number at the top.
+
+
+  <div class="jumbotron">
+
+    <h1 class="text-center">Generate Lottery Numbers!</h1>
+
+    <div class="text-center">
+
+      <!-- Here we have our button with id random-button -->
+      <button id="random-button" class="btn btn-primary btn-lg">
+        <h1>?</h1>
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- Here we have div called "random-number" where our random number will go -->
+  <h1 class="text-center" id="random-number"></h1>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      //jquery code here
+
+
+$("#random-button").on("click", function(){
+  var lottoNumber = "";
+
+  for (var i= 0; i < 9; i++){
+  var random = Math.floor(Math.random() * 9) + 1;
+
+  lottoNumber = random + lottoNumber;
+  }
+
+  $("#random-number").prepend("<br>" + lottoNumber);
+    
+    
+     });
+// ...
+
+});
+
+
+  </script>
+
+</body>
+
+</html>

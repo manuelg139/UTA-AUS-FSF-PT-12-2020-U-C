@@ -7,3 +7,6 @@ articlesDiv.children[0].style.fontSize = "50px";
 mainDiv.style.color = "white";
 
 
+
+
+mainDiv.children[1].style.color = "white";
