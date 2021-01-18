@@ -19,11 +19,16 @@ typefaceEl.addEventListener("change", function(event) {
   document.querySelector(".container").style.fontFamily = typeface;
 });
 
-// Keydown event
+// Keydown event detects each key pressed and we added an event function to it
 textAreaEl.addEventListener("keydown", function(event) {
   // Access value of pressed key with key property
+  console.log('event: ' , event);
+
+  // key is = to the event << key and put it to lowercase to matsh the alphabet var]
   var key = event.key.toLowerCase();
-  var alphabetNumericCharacters = "abcdefghijklmnopqrstuvwxyz0123456789 ".split("");
+  //var for alphabeth with a split that lets you access them individually split("")
+  var alphabetNumericCharacters = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+0123456789 ".split("");
+    // condition, if they match than print 
   if (alphabetNumericCharacters.includes(key)) {
     elements.forEach(function(element) {
       element.textContent += event.key;
@@ -31,6 +36,8 @@ textAreaEl.addEventListener("keydown", function(event) {
   }
 });
 
+
+//clear button
 clearEl.addEventListener("click", function(event) {
   event.preventDefault();
   textAreaEl.value = "";

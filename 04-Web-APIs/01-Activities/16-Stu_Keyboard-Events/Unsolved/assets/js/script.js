@@ -3,6 +3,11 @@ var keyEventsEl = document.querySelector("#key-events");
 
 function keydownAction(event) {
   // TODO: Complete keydown function
+  console.log(event);
+
+
+
+
 }
 
 

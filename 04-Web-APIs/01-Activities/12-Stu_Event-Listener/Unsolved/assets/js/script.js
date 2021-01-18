@@ -20,6 +20,7 @@ setCounterText();
 // TODO: Add event listener to decrement button 
 //call -button sub one when  clicked
 decrementEl.addEventListener("click", function(){
+  // to make it stop subbing at 0 wrap it in an if statement 
   if (count> 0){
   count --;
 setCounterText();}

@@ -53,6 +53,22 @@
           </div>
         </div>
 
+
+        <!-- Rotating -->  
+        <div id="sizeControls" class="card">
+          <h4 class="card-header">Superpowers - Rotates!</h4>
+          <div class="card-body">
+            <div class="text-center">
+              <button class="btn btn-dark btn-lg 90-button">
+                <span class="fa fa-ok"></span> Rotate 90*</button>
+              <button class="btn btn-primary btn-lg 180-button">
+                <span class="fa fa-plus"></span> Rotate 180*</button>
+            </div>
+          </div>
+        </div>
+
+
+
         <!-- Controls (Superpower Visibility) -->
         <div id="visibilityControls" class="card">
           <h4 class="card-header">Superpowers - Invisiblity!</h4>
@@ -125,6 +141,24 @@
     $(".shrink-button").on("click", function() {
       captainPlanet.animate({ height: "100px" });
     });
+
+
+
+
+
+    // Roatate Button
+    $(".90-button").on("click", function() {
+      captainPlanet.rotate({ angle: "90deg" });
+    });
+
+    $(".180-button").on("click", function() {
+      captainPlanet.animate({ rotate: "90deg" });
+    });
+
+
+
+
+
 
     // Visibility Buttons
     $(".vis-button").on("click", function() {
