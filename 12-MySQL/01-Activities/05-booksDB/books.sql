@@ -40,7 +40,7 @@ INNER JOIN authors ON books.authorId = authors.id;
 -- show ALL books, even if we don't know the author
 -- LEFT JOIN returns all of the values from the left table, and the matching ones from the right table
 SELECT title, firstName, lastName
-FROM books
+FROM books 
 LEFT JOIN authors ON books.authorId = authors.id;
 
 -- show ALL books, even if we don't know the author
