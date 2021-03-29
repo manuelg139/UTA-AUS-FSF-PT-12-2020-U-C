@@ -1,18 +1,14 @@
 const mysql = require('mysql');
 const inquirer = require('inquirer');
 
+
+// create the connection information for the sql database
 const connection = mysql.createConnection({
-  host: 'localhost',
-
-  // Your port; if not 3306
+  host: "localhost",
   port: 3306,
-
-  // Your username
-  user: 'root',
-
-  // Be sure to update with your own MySQL password!
-  password: '',
-  database: 'top_songsDB',
+  user: "root",
+  password: process.env.PASSWORD,
+  database: "top_songsDB"
 });
 
 connection.connect((err) => {
@@ -166,6 +162,8 @@ const songAndAlbumSearch = () => {
       message: 'What artist would you like to search for?',
     })
     .then((answer) => {
+
+      //add en extra query 
       let query =
         'SELECT top_albums.year, top_albums.album, top_albums.position, top5000.song, top5000.artist ';
       query +=
