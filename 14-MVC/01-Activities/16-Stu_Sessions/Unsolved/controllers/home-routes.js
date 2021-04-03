@@ -17,6 +17,19 @@ router.get('/', async (req, res) => {
       gallery.get({ plain: true })
     );
     // TODO: Send over the 'loggedIn' session variable to the 'homepage' template
+    
+    
+    req.session.save(() => {
+      // Set up a session log in check 
+      if (req.session.logInCheck) {
+        req.session.logInCheck = true;
+
+      } else {
+        // If the 'countVisit' session variable doesn't exist, set it to 1
+        req.session.logInCheck = false;
+      }
+
+
     res.render('homepage', {
       galleries,
     });
